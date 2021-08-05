@@ -73,12 +73,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+//local database
+$dev_db['hostname'] = 'localhost';
+$dev_db['username'] = '';
+$dev_db['password'] = '';
+$dev_db['database'] = '';
+
+//prod database
+$prod_db['hostname'] = '';
+$prod_db['username'] = '';
+$prod_db['password'] = '';
+$prod_db['database'] = '';
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => (empty($_SERVER['HTTPS']))? $dev_db['hostname'] : $prod_db['hostname'],
+	'username' => (empty($_SERVER['HTTPS']))? $dev_db['username'] : $prod_db['username'],
+	'password' => (empty($_SERVER['HTTPS']))? $dev_db['password'] : $prod_db['password'],
+	'database' => (empty($_SERVER['HTTPS']))? $dev_db['database'] : $prod_db['database'],
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
