@@ -25,6 +25,7 @@
 	            	<h4 class="text-muted">Page Content</h4>
 	                <a href="#templateStructure" class="nav-link">Template Structure</a>
 	                <a href="#commonLibraries" class="nav-link">Common Libraries</a>
+	                <a href="https://github.com/BoyLado/ci-template" target="_blank" class="nav-link">Download Template</a>
 	                
 
 	                <h4 class="text-muted">Source Links</h4>
