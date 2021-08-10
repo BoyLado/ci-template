@@ -1,8 +1,8 @@
 // import modules or API helpers here!
 
-const baseUrl = $('#txt_baseUrl').val(); 
+const baseUrl = $('#txt_baseUrl').val();
 
-const moduleName = (function(){
+const MODULENAME = (function(){
 
 	let thisModuleName = {};
 
@@ -15,7 +15,7 @@ const moduleName = (function(){
 	//example: testFunc
 	thisModuleName.testFunc = function()
 	{
-		alert('Test Function');
+		alert(baseUrl);
 	}
 	//============================================================================>
 
@@ -23,3 +23,4 @@ const moduleName = (function(){
 
 })();
 
+export { MODULENAME };

@@ -7,11 +7,5 @@
 
 <!-- ==========================================================================================> -->
 
-<!-- Custom JS [Functions/Methods Only] -->
-<script type="module" src="<?php echo base_url(); ?>assets/js/auth_custom_scripts.js"></script>
-<script type="module" src="<?php echo base_url(); ?>assets/js/admin_custom_scripts.js"></script>
-<script type="module" src="<?php echo base_url(); ?>assets/js/user_custom_scripts.js"></script>
-<script type="module" src="<?php echo base_url(); ?>assets/js/guest_custom_scripts.js"></script>
-
 <!-- Custom JS [JQuery Events] -->
 @yield('custom_scripts')

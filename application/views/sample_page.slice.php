@@ -71,10 +71,11 @@
 
 @section('custom_scripts')
 
-<script type="text/javascript">
+<script type="module">
+	import { MODULENAME } from './assets/js/admin_custom_scripts.js';
 	$(document).ready(function(){
 		// JS EVENTS
-
+		// MODULENAME.testFunc();
 	});
 </script>
 
