@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 //local database
 $dev_db['hostname'] = 'localhost';
-$dev_db['username'] = '';
+$dev_db['username'] = 'root';
 $dev_db['password'] = '';
-$dev_db['database'] = '';
+$dev_db['database'] = 'rebap_gh_v4';
 
 //prod database
 $prod_db['hostname'] = '';

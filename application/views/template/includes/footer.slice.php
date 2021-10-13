@@ -1,7 +1,7 @@
 
 
 <!-- JS Libraries here! -->
-<script src="<?php echo base_url(); ?>assets/lib/jquery/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="<?php echo base_url(); ?>assets/lib/popper/popper.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/lib/bootstrap/js/bootstrap.min.js"></script>
 

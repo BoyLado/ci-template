@@ -9,6 +9,8 @@ class NavigationController extends CI_Controller
 
 		$this->load->helper('url');
 		$this->load->library('SliceLibrary',null,'slice');
+
+		$this->load->database();
 	}
 
 	public function index()
