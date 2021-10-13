@@ -71,11 +71,14 @@
 
 @section('custom_scripts')
 
-<script type="module">
-	import { MODULENAME } from './assets/js/admin_custom_scripts.js';
+<script src="<?php echo base_url(); ?>assets/js/helpers/common_helper.js"></script>
+
+<script src="<?php echo base_url(); ?>assets/js/guest_custom_scripts.js"></script>
+
+<script type="text/javascript">
 	$(document).ready(function(){
-		// JS EVENTS
-		// MODULENAME.testFunc();
+		// jquery events & methods from "guest_custom_scripts.js" & "common_helper"
+
 	});
 </script>
 

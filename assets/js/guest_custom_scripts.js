@@ -1,5 +1,3 @@
-// import modules or API helpers here!
-
 const baseUrl = $('#txt_baseUrl').val(); 
 
 const MODULENAME = (function(){
@@ -22,5 +20,3 @@ const MODULENAME = (function(){
 	return thisModuleName;
 
 })();
-
-export { MODULENAME };
