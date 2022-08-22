@@ -19,5 +19,12 @@ class NavigationController extends CI_Controller
 		$this->slice->view('sample_page', $data);
 	}
 
+	public function login()
+	{
+		$data['pageTitle'] = "U Pick a Pallet LLC | Login";
+        $data['customScripts'] = 'login';
+		$this->slice->view('login', $data);
+	}
+
 	//place your navigation links here
 }
